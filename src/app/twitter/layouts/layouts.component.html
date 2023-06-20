@@ -1,0 +1,10 @@
+<h1>Layout</h1>
+<div>
+  <ol>
+    <li *ngFor="let item of menuItems" [routerLink]="item.route">
+      {{item.name}}
+    </li>
+  </ol>
+</div>
+
+<router-outlet/>
